@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: url(../Zjazd2/desert-road.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.inputs textarea {
+    width: 300px;
+    height: 100px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 99%;
+    margin: 0 auto;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    overflow: auto;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: rgba(134, 188, 212, 0.6);
+}
+
+.sidebar > * {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.sidebar > *:hover {
+    color: black;
+}
+
+.sidebar-row {
+    padding-left: 20px;
+    font-weight: 600;
+    background-color: rgb(101, 153, 228);
+}
+
+.sidebar-row:hover {
+    background-color: rgba(101, 153, 228, 0.6);
+}
+
+.sidebar-subrow {
+    padding-left: 50px;
+    background-color: rgb(67, 119, 221);
+}
+
+.sidebar-subrow:hover {
+    background-color: rgba(67, 119, 221, 0.6);
+}
+
+.content {
+    width: 80%;
+    padding: 0 20px;
+    background-color: rgb(120, 170, 239);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.header {
+    color: rgb(38, 55, 159);
+    font-size: 70px;
+    line-height: 3;
+    font-weight: 600;
+}
+
+.text {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: black;
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+.subheader {
+    color: black;
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.inputs-left, .inputs-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-left {
+    margin-right: 140px;
+}
+
+.inputs-left input {
+    width: 50%;
+}
+
+.inputs-left p, .inputs-right p {
+    margin: 0;
+}
+
+.inputs-right button {
+    width: 55px;
+}
+
+.inputs-right select {
+    width: 110px;
+}
+
+.table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.header-row div {
+    color: white;
+    background-color: rgb(51, 118, 170);
+}
+
+.header-row, .light-row, .dark-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 45px;
+}
+
+.header-row div, .light-row div, .dark-row div {
+    height: 45px;
+    line-height: 45px;
+    width: 33%;
+    text-align: center;
+}
+
+.light-row div, .dark-row div {
+    color: black;
+}
+
+.light-row div {
+    background-color: rgb(187, 213, 246);
+}
+
+.dark-row div {
+    background-color: rgb(120, 170, 239);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.footer > * {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 23px;
+    margin: 0;
+    background-color: #010080;
+}
