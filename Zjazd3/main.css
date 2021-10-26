@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(238, 238, 238);
+    overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+    body .left-panel,
+    body .right-panel {
+        width: 100%;
+    }
+
+    .main-content {
+        flex-wrap: wrap;
+    }
+}
+
+.inputs textarea {
+    width: 300px;
+    height: 100px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.navigation {
+    width: 100%;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar > div {
+    padding: 15px;
+}
+
+.navbar > div a {
+    text-decoration: none;
+}
+
+.navbar div.sublinks-trigger:hover .sublinks {
+    opacity: 1;
+}
+
+.sublinks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 300ms;
+    top: 40px;
+    left: 5px;
+    border: 1px solid rgb(194, 194, 194);
+    border-bottom: none;
+}
+
+.sublinks > a {
+    text-decoration: none;
+    width: 180px;
+    border-bottom: 1px solid rgb(84, 84, 84);
+    background-color: white;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 5px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    gap: 45px;
+    overflow: auto;
+    padding: 10px 20px;
+}
+
+.left-panel, .right-panel {
+    width: 50%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 4px 4px 4px rgb(221, 221, 221);
+}
+
+.right-panel {
+    height: 97.5%;
+}
+
+.header {
+    color: black;
+    font-size: 55px;
+    line-height: 3;
+    font-weight: 600;
+}
+
+.header-small {
+    color: black;
+    font-size: 25px;
+    line-height: 3;
+    font-weight: 600;
+}
+
+.text {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: rgb(106, 118, 108);
+}
+
+.image {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.subheader {
+    color: black;
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 10px;
+    gap: 15px;
+    background-color: rgb(238, 238, 238);
+}
+
+.inputs p {
+    margin: 0;
+}
+
+.inputs input:not([type=radio]),
+.inputs textarea {
+    width: 80%;
+}
+
+.inputs input[type=radio] {
+    height: 17px;
+    width: 17px;
+}
+
+.inputs select {
+    width: 79%;
+}
+
+.inputs button {
+    width: 55px;
+}
+
+.table {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    background-color: white;
+}
+
+.header-row, .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 30px;
+}
+
+.row {
+    gap: 5px;
+}
+
+.header-row div {
+    font-weight: 600;
+}
+
+.header-row div,
+.row div {
+    color: black;
+    height: 30px;
+    line-height: 30px;
+    width: 33%;
+    text-align: center;
+}
+
+.row div {
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    background-color: rgb(238, 238, 238);
+    color: white;
+    border-top: 10px solid white;
+}
+
+.footer > * {
+    flex: 1;
+    height: 70px;
+    line-height: 85px;
+    font-size: 18px;
+    margin: 0;
+    background-color: white;
+    color: rgb(106, 118, 108);
+    padding-left: 55px;
+}
