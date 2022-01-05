@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Zjazd 4 - TIN</title>
+
+        <link rel="stylesheet" href="./main.css" />
+        <script src="./main.js"></script>
+    </head>
+    <body>
+        <div class="app">
+            <div class="exercise">
+                <h1>Zadanie 1:</h1>
+                <div class="exercise-content">
+                    Napisz funkcję, sprawdzającą, czy dane trzy liczby tworzą
+                    „trójkę pitagorejską” (uwaga – liczby nie muszą być podane w
+                    kolejności rosnącej)
+                </div>
+                <div class="exercise-inputs">
+                    <div class="exercise-input">
+                        <label for="exercise-input-1A">Liczba 1:</label>
+                        <input id="exercise-input-1A" type="number" />
+                    </div>
+                    <div class="exercise-input">
+                        <label for="exercise-input-1B">Liczba 2:</label>
+                        <input id="exercise-input-1B" type="number" />
+                    </div>
+                    <div class="exercise-input">
+                        <label for="exercise-input-1C">Liczba 3:</label>
+                        <input id="exercise-input-1C" type="number" />
+                    </div>
+                </div>
+                <div class="exercise-button">
+                    <button
+                        class="confirm"
+                        type="button"
+                        onclick="checkIfPythagoreanTriple()"
+                    >
+                        Wypisz w konsoli
+                    </button>
+                </div>
+            </div>
+            <div class="exercise">
+                <h1>Zadanie 2:</h1>
+                <div class="exercise-content">
+                    Napisz funkcję wypisującą wszystkie liczby z przedziału a-b,
+                    podzielne przez c
+                </div>
+                <div class="exercise-inputs">
+                    <div class="exercise-input">
+                        <label for="exercise-input-2A">Liczba 1:</label>
+                        <input id="exercise-input-2A" type="number" />
+                    </div>
+                    <div class="exercise-input">
+                        <label for="exercise-input-2B">Liczba 2:</label>
+                        <input id="exercise-input-2B" type="number" />
+                    </div>
+                    <div class="exercise-input">
+                        <label for="exercise-input-2C">Liczba 3:</label>
+                        <input id="exercise-input-2C" type="number" />
+                    </div>
+                </div>
+                <div class="exercise-button">
+                    <button
+                        class="confirm"
+                        type="button"
+                        onclick="printDivisibleFromRange()"
+                    >
+                        Wypisz w konsoli
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

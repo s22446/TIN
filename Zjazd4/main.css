@@ -1,0 +1,9 @@
+.exercise-inputs {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.exercise-button {
+    margin-top: 10px;
+}
