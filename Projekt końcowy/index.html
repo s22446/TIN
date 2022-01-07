@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Kółko i Krzyżyk</title>
+
+        <link rel="stylesheet" href="./css/main.css" />
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div class="header">
+                <h1>Kółko i Krzyżyk</h1>
+            </div>
+            <div class="main-content">
+                <div class="game-container">
+                    <div class="status-bar">
+                        <div id="status-game-started">
+                            The game has not started yet.
+                        </div>
+                        <div id="status-current-sign"></div>
+                        <div id="status-results">
+                            <div class="results-container">
+                                <div>Results:</div>
+                                <div id="results-values">X: 0 | O: 0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-board">
+                        <div class="game-squares-container">
+                            <div class="game-squares">
+                                <div class="square-row" id="row-1">
+                                    <div class="game-square"></div>
+                                    <div class="game-square"></div>
+                                    <div class="game-square"></div>
+                                </div>
+                                <div class="square-row" id="row-2">
+                                    <div class="game-square"></div>
+                                    <div class="game-square"></div>
+                                    <div class="game-square"></div>
+                                </div>
+                                <div class="square-row" id="row-3">
+                                    <div class="game-square"></div>
+                                    <div class="game-square"></div>
+                                    <div class="game-square"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-bar">
+                    <div class="menu-item menu-row inactive">Menu</div>
+                    <div class="menu-item" id="start-game-menubutton">
+                        Start The Game
+                    </div>
+                    <div class="menu-item hidden" id="stop-game-menubutton">
+                        Stop The Game
+                    </div>
+                    <div class="menu-item" id="starting-sign-menubutton">
+                        Change Starting Sign
+                    </div>
+                    <div class="menu-item inactive" id="current-starting-sign">
+                        Starting Sign: <span>X</span>
+                    </div>
+                    <div class="menu-item" id="clear-results-menubutton">
+                        Clear results
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-shadow"></div>
+        <div class="page-shadow-text"></div>
+    </body>
+</html>
