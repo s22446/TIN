@@ -59,7 +59,15 @@ body {
     margin: 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1120px) {
+    body .page-shadow-text {
+        font-size: 75px;
+    }
+
+    body .page-shadow-text p {
+        font-size: 50px;
+    }
+
     body .header {
         width: 90%;
         margin-left: auto;
@@ -85,7 +93,15 @@ body {
     }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 900px) {
+    body .page-shadow-text {
+        font-size: 55px;
+    }
+
+    body .page-shadow-text p {
+        font-size: 35px;
+    }
+
     body .status-bar {
         flex-direction: column;
         height: auto;
