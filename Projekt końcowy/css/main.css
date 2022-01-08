@@ -81,14 +81,18 @@ body {
     }
 
     body .menu-item {
-        width: 160px;
+        width: 190px;
     }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 660px) {
     body .status-bar {
         flex-direction: column;
         height: auto;
+    }
+
+    body .status-bar div {
+        text-align: center;
     }
 }
 
@@ -149,6 +153,30 @@ body {
     display: block;
 }
 
+#status-opponent {
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 50px;
+    display: none;
+}
+
+#status-opponent.filled {
+    border: 1px solid black;
+    display: block;
+}
+
+#status-whose-move {
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 50px;
+    display: none;
+}
+
+#status-whose-move.filled {
+    border: 1px solid black;
+    display: block;
+}
+
 #status-results {
     padding-left: 5px;
     padding-right: 5px;
@@ -199,6 +227,10 @@ body {
     gap: 3px;
 }
 
+.game-squares.computer-move {
+    cursor: not-allowed;
+}
+
 .square-row {
     display: flex;
     width: 100%;
@@ -216,6 +248,10 @@ body {
 
 .game-square.inactive {
     cursor: default;
+}
+
+.game-square.computer-move {
+    pointer-events: none;
 }
 
 .menu-bar {
@@ -250,6 +286,10 @@ body {
 .menu-item:not(.inactive):hover {
     cursor: pointer;
     background-color: rgb(196, 196, 196);
+}
+
+.menu-item.info {
+    background-color: white;
 }
 
 .sign-x {

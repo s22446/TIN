@@ -18,6 +18,8 @@
                         <div id="status-game-started">
                             The game has not started yet.
                         </div>
+                        <div id="status-whose-move"></div>
+                        <div id="status-opponent"></div>
                         <div id="status-current-sign"></div>
                         <div id="status-results">
                             <div class="results-container">
@@ -50,7 +52,7 @@
                 </div>
                 <div class="menu-bar">
                     <div class="menu-item menu-row inactive">Menu</div>
-                    <div class="menu-item" id="start-game-menubutton">
+                    <div class="menu-item menu-row" id="start-game-menubutton">
                         Start The Game
                     </div>
                     <div class="menu-item hidden" id="stop-game-menubutton">
@@ -59,8 +61,26 @@
                     <div class="menu-item" id="starting-sign-menubutton">
                         Change Starting Sign
                     </div>
-                    <div class="menu-item inactive" id="current-starting-sign">
+                    <div
+                        class="menu-item inactive info"
+                        id="current-starting-sign"
+                    >
                         Starting Sign: <span>X</span>
+                    </div>
+                    <div class="menu-item" id="switch-opponent">
+                        Switch your opponent
+                    </div>
+                    <div class="menu-item inactive info" id="current-opponent">
+                        Current opponent: <span>human</span>
+                    </div>
+                    <div class="menu-item hidden" id="computer-sign">
+                        Change computer's sign
+                    </div>
+                    <div
+                        class="menu-item inactive info hidden"
+                        id="computer-sign-info"
+                    >
+                        Computer's sign: <span></span>
                     </div>
                     <div class="menu-item" id="clear-results-menubutton">
                         Clear results
